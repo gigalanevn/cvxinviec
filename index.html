@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nhân Viên Kho - [Lê Bá Quý]</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #16a085;
+            --bg-body: #ecf0f1;
+            --text-dark: #2d3436;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-body);
+            margin: 0; padding: 40px 10px;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .cv-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            display: flex;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-radius: 4px;
+            min-height: 1100px;
+        }
+
+        /* Sidebar bên trái */
+        .sidebar {
+            width: 32%;
+            background-color: var(--primary-color);
+            color: #ecf0f1;
+            padding: 40px 25px;
+        }
+
+        .avatar-placeholder {
+            width: 140px; height: 140px;
+            background: #34495e; border-radius: 50%;
+            margin: 0 auto 25px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 50px; border: 4px solid var(--secondary-color);
+        }
+
+        .sidebar h3 {
+            font-size: 1.1em; text-transform: uppercase;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px; margin-top: 35px;
+            letter-spacing: 1px;
+        }
+
+        .contact-list p { font-size: 0.9em; margin-bottom: 12px; word-wrap: break-word; }
+        .skill-list { list-style: none; padding: 0; font-size: 0.9em; }
+        .skill-list li { margin-bottom: 8px; padding-left: 15px; position: relative; }
+        .skill-list li::before { content: "▹"; position: absolute; left: 0; color: var(--secondary-color); }
+
+        /* Nội dung chính bên phải */
+        .main-body {
+            width: 68%;
+            padding: 50px 40px;
+        }
+
+        .header-name h1 { margin: 0; color: var(--primary-color); font-size: 2.6em; text-transform: uppercase; }
+        .header-name .title { color: var(--secondary-color); font-weight: bold; font-size: 1.25em; margin-bottom: 30px; }
+
+        section { margin-bottom: 35px; }
+        h2 { 
+            font-size: 1.4em; color: var(--primary-color); 
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px; margin-bottom: 20px;
+            background: #f9f9f9; padding-top: 5px; padding-bottom: 5px;
+        }
+
+        .timeline-item { margin-bottom: 25px; position: relative; }
+        .timeline-header { display: flex; justify-content: space-between; font-weight: bold; color: #000; }
+        .sub-header { color: var(--secondary-color); font-style: italic; font-weight: 500; margin-bottom: 8px; }
+        
+        ul.desc { padding-left: 18px; margin-top: 5px; font-size: 0.95em; }
+        ul.desc li { margin-bottom: 6px; }
+
+        .salary-tag {
+            background: #e8f8f5; border: 1px solid var(--secondary-color);
+            padding: 15px; border-radius: 6px;
+            color: var(--primary-color); font-weight: bold;
+            display: inline-block; font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .cv-wrapper { flex-direction: column; }
+            .sidebar, .main-body { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-wrapper">
+    <div class="sidebar">
+        <img src="D:\quy\web\xin viec\av.jpg" style="width:100%; height:15%; border-radius:5%; object-fit:cover;">
+        
+        <h3>Liên Hệ</h3>
+        <div class="contact-list">
+            <p>📞 0853.342.460</p>
+            <p>📧 quyictu@gmail.com</p>
+            <p>📍 Tân Yên - Bắc Giang</p>
+            <p>🎂 Ngày Sinh: 24/12/1992</p>
+        </div>
+
+        <h3>Kỹ Năng CNTT</h3>
+        <ul class="skill-list">
+            <li>Sử dụng phần mềm Kho (ERP/SAP)</li>
+            <li>Tin học văn phòng (Excel nâng cao)</li>
+            <li>Quản lý dữ liệu số lượng lớn</li>
+            <li>Sửa chữa máy tính cơ bản</li>
+        </ul>
+
+        <h3>Kỹ Năng Quản Lý</h3>
+        <ul class="skill-list">
+            <li>Điều phối nhân sự (Team 10-20 người)</li>
+            
+            <li>Lập báo cáo sản lượng ngày/tuần</li>
+            <li>Kiểm soát chất lượng đầu ra (QC)</li>
+        </ul>
+    </div>
+
+    <div class="main-body">
+        <header class="header-name">
+            <h1>LÊ BÁ QUÝ</h1>
+            <div class="title">ỨNG TUYỂN NHÂN VIÊN KHO THÀNH PHẨM</div>
+        </header>
+
+        <section>
+            <h2>Mục Tiêu Nghề Nghiệp</h2>
+            <p>Tận dụng nền tảng tư duy công nghệ thông tin và kinh nghiệm quản lý tổ nhóm thực tế để tối ưu hóa quy trình vận hành kho điện tử. Mong muốn ứng tuyển vào vị trí Nhân viên kho để đảm bảo tính chính xác của dữ liệu và hiệu quả trong việc luân chuyển hàng hóa linh kiện.</p>
+        </section>
+
+        <section>
+            <h2>Kinh Nghiệm Làm Việc</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span>Tổ Trưởng Đóng Gói (Packing Leader)</span>
+                    <span>2022 - Hiện tại</span>
+                </div>
+                <div class="sub-header">Công ty TNHH Gigalane Vina</div>
+                <ul class="desc">
+                    <li>Quản lý trực tiếp đội ngũ 10 nhân viên tại khu vực đóng gói linh kiện điện tử.</li>
+                    <li>Lập kế hoạch đóng gói dựa trên đơn hàng mỗi ngày, đảm bảo đúng tiến độ xuất kho.</li>
+                    <li>Kiểm soát chất lượng bao bì, tem nhãn (Label) theo đúng tiêu chuẩn kỹ thuật của khách hàng.</li>
+                    <li>Báo cáo trực tiếp số liệu sản phẩm hoàn thiện hàng ngày lên hệ thống máy tính.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span>Công nhân kho</span>
+                    <span>2018 - 2021</span>
+                </div>
+                <div class="sub-header">Công ty TNHH khoa học kỹ thuật năng lượng Mặt Trời BOVIET</div>
+                <ul class="desc">
+                    <li>Sắp xếp hàng hoá, nhập xuất vật liệu trong kho.</li>
+                    <li>Kiểm kê linh kiện hàng tuần, tháng, năm.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Học Vấn</h2>
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span>Tốt nghiệp Đại học Công nghệ Thông tin và Truyền thông</span>
+                    <span>2017</span>
+                </div>
+                <div class="sub-header">Đại học Thái Nguyên (ICTU)</div>
+                <p>Chuyên ngành: Công nghệ thông tin.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mức Lương Mong Muốn (Chưa Tính Tăng Ca)</h2>
+            <div class="salary-tag">
+                💰 11.000.000đ - 12.000.000đ
+            </div>
+            <p style="font-size: 0.9em; color: #666; margin-top: 10px;">
+                (Mức lương thỏa thuận dựa trên trách nhiệm công việc và khả năng đóng góp cho bộ phận kho)
+            </p>
+        </section>
+
+        <section>
+            <h2>Thế Mạnh Đặc Biệt</h2>
+            <ul class="desc">
+                <li>Sử dụng máy tính cực nhanh, thành thạo Excel để quản lý kho.</li>
+                <li>Có tư duy logic của dân kỹ thuật, xử lý tình huống phát sinh tốt.</li>
+                <li>Sức khỏe tốt, chịu được áp lực thời gian tại khu vực sản xuất/kho bãi.</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
